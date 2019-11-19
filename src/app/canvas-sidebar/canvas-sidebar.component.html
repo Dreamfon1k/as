@@ -1,0 +1,24 @@
+<div class="topup"><a href="#" class="logo">NeonWeb</a></div>
+<div class="scrollable"></div>
+<mat-sidenav-container class="container">
+  <mat-sidenav [opened]="isOpened" mode="side" disableClose>
+
+    <nav class="side-nav">
+      <ul class="has-text-centered">
+      </ul>
+    </nav>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <main class="main-content">
+    <a class="toggle-button" (click)="toggleSidebar()">
+      <span *ngIf="!isOpened"><i class="fas fa-bars"><</i></span>
+      <span *ngIf="isOpened"><i class="far fa-window-close">></i></span>
+    </a>
+    <h1 class="title">PLS HELP</h1>
+
+
+  </main>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
